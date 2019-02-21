@@ -1,4 +1,4 @@
-﻿Log file open, 01/10/19 09:05:52
+﻿Log file open, 02/21/19 14:22:56
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: Ultimate_NAF
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 17 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.305440
+LogStats: Stats thread started at 0.309504
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took 241.454s to configure plugins.
+LogStreaming: Display: Took  0.130s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -114,16 +114,16 @@ LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connecti
 LogInit:  - LocalHostAddr = Default
 LogInit:  - BufferSize = 65536
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogInit: Build: ++UE4+Release-4.21-CL-4613538
-LogInit: Engine Version: 4.21.1-4613538+++UE4+Release-4.21
+LogInit: Build: ++UE4+Release-4.21-CL-4753647
+LogInit: Engine Version: 4.21.2-4753647+++UE4+Release-4.21
 LogInit: Compatible Engine Version: 4.21.0-4541578+++UE4+Release-4.21
 LogInit: Net CL: 4541578
 LogInit: OS: Windows 10 (), CPU: AMD FX(tm)-6300 Six-Core Processor             , GPU: NVIDIA GeForce GTX 1050 Ti
-LogInit: Compiled (64-bit): Nov 30 2018 04:13:25
+LogInit: Compiled (64-bit): Jan 19 2019 02:07:31
 LogInit: Compiled with Visual C++: 19.13.26129.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.21
-LogInit: Command Line: 
+LogInit: Command Line:  /Game/Levels/Templates/Testing_Level_02_2 -game -PIEVIACONSOLE -ResX=1280 -ResY=720 -Multiprocess -messaging -SessionName="Play in Standalone Game" -windowed
 LogInit: Base Directory: E:/Program Files/Epic Games/UE_4.21/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 22
@@ -149,556 +149,627 @@ LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
 LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogStreaming: Display: Took  0.003s to delete old logs.
+LogStreaming: Display: Took  0.001s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DOF.Algorithm:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:1]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
-[2019.01.09-22.09.30:047][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:2]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.EarlyZPassMovable:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.MonoscopicFarField:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
-[2019.01.09-22.09.30:048][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:049][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.01.09-22.09.30:049][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:049][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.30:063][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:063][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.09-22.09.30:064][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.09-22.09.30:065][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.09-22.09.30:066][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.09-22.09.30:066][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.01.09-22.09.42:337][  0]LogHAL: Display: Platform has ~ 16 GB [17160523776 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.01.09-22.09.42:337][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.01.09-22.09.42:337][  0]LogInit: Going up to parent DeviceProfile []
-[2019.01.09-22.09.42:337][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:337][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.09-22.09.42:337][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.09-22.09.42:338][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.09-22.09.42:339][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
-[2019.01.09-22.09.42:340][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.09-22.09.42:340][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.09-22.09.42:340][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.01.09-22.09.42:340][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.01.09-22.09.42:340][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
-[2019.01.09-22.09.42:340][  0]LogInit: Computer: DESKTOP-MARKS
-[2019.01.09-22.09.42:340][  0]LogInit: User: Mark
-[2019.01.09-22.09.42:340][  0]LogInit: CPU Page size=4096, Cores=3
-[2019.01.09-22.09.42:340][  0]LogInit: High frequency timer resolution =3.433159 MHz
-[2019.01.09-22.09.42:341][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2019.01.09-22.09.42:341][  0]LogMemory: Platform Memory Stats for Windows
-[2019.01.09-22.09.42:341][  0]LogMemory: Process Physical Memory: 103.03 MB used, 103.03 MB peak
-[2019.01.09-22.09.42:341][  0]LogMemory: Process Virtual Memory: 86.43 MB used, 86.43 MB peak
-[2019.01.09-22.09.42:341][  0]LogMemory: Physical Memory: 6441.55 MB used,  9924.00 MB free, 16365.55 MB total
-[2019.01.09-22.09.42:341][  0]LogMemory: Virtual Memory: 4630.29 MB used,  134213096.00 MB free, 134217728.00 MB total
-[2019.01.09-22.09.42:379][  0]LogInit: Using OS detected language (en-US).
-[2019.01.09-22.09.42:379][  0]LogInit: Using OS detected locale (en-AU).
-[2019.01.09-22.09.42:381][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.01.09-22.09.42:980][  0]LogStreaming: Display: Took  0.601s to InitEngineTextLocalization.
-[2019.01.09-22.09.42:980][  0]LogInit: Setting process to per monitor DPI aware
-[2019.01.09-22.09.43:020][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.01.09-22.09.43:020][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.01.09-22.09.43:395][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.01.09-22.09.43:395][  0]LogD3D11RHI: D3D11 adapters:
-[2019.01.09-22.09.43:498][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
-[2019.01.09-22.09.43:498][  0]LogD3D11RHI:       4018/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2019.01.09-22.09.43:501][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.01.09-22.09.43:501][  0]LogD3D11RHI:       0/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.01.09-22.09.43:501][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.01.09-22.09.43:511][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.01.09-22.09.43:511][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
-[2019.01.09-22.09.43:511][  0]LogWindows: EnumDisplayDevices:
-[2019.01.09-22.09.43:512][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
-[2019.01.09-22.09.43:512][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
-[2019.01.09-22.09.43:513][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.01.09-22.09.43:513][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.01.09-22.09.43:514][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.01.09-22.09.43:514][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
-[2019.01.09-22.09.43:514][  0]LogD3D11RHI:   Driver Version: 417.35 (internal:25.21.14.1735, unified:417.35)
-[2019.01.09-22.09.43:514][  0]LogD3D11RHI:      Driver Date: 12-11-2018
-[2019.01.09-22.09.43:514][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
-[2019.01.09-22.09.43:593][  0]LogD3D11RHI: Async texture creation enabled
-[2019.01.09-22.09.43:614][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.01.09-22.09.44:235][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.01.09-22.09.44:263][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.01.09-22.09.44:287][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.01.09-22.09.44:312][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.01.09-22.09.44:338][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.01.09-22.09.44:363][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.01.09-22.09.44:390][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.01.09-22.09.44:416][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.01.09-22.09.44:429][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:574][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.09-22.09.44:577][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.01.09-22.09.44:665][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.09-22.09.44:665][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.09-22.09.44:710][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.09-22.09.44:710][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.09-22.09.44:733][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.01.09-22.09.44:758][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.01.09-22.09.44:780][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.01.09-22.09.44:806][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.01.09-22.09.44:899][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.09-22.09.44:899][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.09-22.09.44:899][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.01.09-22.09.44:993][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Intermediate/Shaders/WorkingDirectory/7232/).
-[2019.01.09-22.09.44:994][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Mark/AppData/Local/Temp/UnrealShaderWorkingDir/281018DF44C1A10DAD79A69A7343D8E1/'.
-[2019.01.09-22.09.44:997][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.01.09-22.09.44:997][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.01.09-22.09.44:997][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.01.09-22.09.46:046][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: Loaded boot cache 0.12s 71MB C:/Users/Mark/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Mark/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.09-22.09.46:166][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.01.09-22.09.46:188][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.01.09-22.09.46:188][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.09-22.09.46:188][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.01.09-22.09.46:202][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Mark/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.01.09-22.09.46:202][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.01.09-22.09.46:202][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.01.09-22.09.46:242][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.01.09-22.09.46:244][  0]LogSlate: Using FreeType 2.6.0
-[2019.01.09-22.09.46:245][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.01.09-22.09.46:383][  0]LogAssetRegistry: FAssetRegistry took 0.0432 seconds to start up
-[2019.01.09-22.09.47:024][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.09-22.09.47:268][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.01.09-22.09.47:275][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.01.09-22.09.47:275][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.01.09-22.09.47:275][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.01.09-22.09.47:275][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.01.09-22.09.47:303][  0]LogNetVersion: Ultimate_NAF 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2550955653)
-[2019.01.09-22.11.53:320][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 113.555262 seconds
-[2019.01.09-22.11.53:338][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.01.09-22.11.53:338][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
-[2019.01.09-22.11.53:338][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.01.09-22.12.03:320][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.01.09-22.12.03:338][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.01.09-22.12.07:631][  0]SourceControl: Source control is disabled
-[2019.01.09-22.12.07:631][  0]SourceControl: Source control is disabled
-[2019.01.09-22.12.07:636][  0]SourceControl: Source control is disabled
-[2019.01.09-22.12.07:639][  0]SourceControl: Source control is disabled
-[2019.01.09-22.12.26:117][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.01.09-22.12.26:540][  0]LogOcInput: OculusInput pre-init called
-[2019.01.09-22.12.26:805][  0]LogEngine: Initializing Engine...
-[2019.01.09-22.12.26:807][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.01.09-22.12.26:811][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.09-22.12.26:811][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.09-22.12.26:811][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.09-22.12.26:811][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.09-22.12.27:489][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.01.09-22.12.27:521][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.01.09-22.12.27:840][  0]LogInit: XAudio2 using 'VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.01.09-22.12.27:877][  0]LogInit: FAudioDevice initialized.
-[2019.01.09-22.12.27:877][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.01.09-22.12.28:100][  0]LogDerivedDataCache: Saved boot cache 0.22s 71MB C:/Users/Mark/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.09-22.12.28:119][  0]LogInit: Texture streaming: Enabled
-[2019.01.09-22.12.28:167][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.01.09-22.12.28:216][  0]LogInit: Transaction tracking system initialized
-[2019.01.09-22.12.28:294][  0]BlueprintLog: New page: Editor Load
-[2019.01.09-22.12.35:014][  0]LocalizationService: Localization service is disabled
-[2019.01.09-22.13.09:311][  0]LogFileCache: Scanning file cache for directory 'F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/' took 0.03s
-[2019.01.09-22.13.09:311][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.01.09-22.13.09:312][  0]LogCook: Display: Mobile HDR setting 1
-[2019.01.09-22.13.09:313][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.01.09-22.13.09:313][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.09-22.13.09:313][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.09-22.13.09:314][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.09-22.13.09:314][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.09-22.13.09:765][  0]SourceControl: Source control is disabled
-[2019.01.09-22.13.09:769][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 E:/Program Files/Epic Games/UE_4.21/FeaturePacks/StarterContent.upack)
-[2019.01.09-22.13.09:791][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2019.01.09-22.13.09:918][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Floor_400x400.uasset".
-[2019.01.09-22.13.10:769][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2019.01.09-22.13.11:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2019.01.09-22.13.13:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2019.01.09-22.13.19:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2019.01.09-22.13.23:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2019.01.09-22.13.31:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2019.01.09-22.13.39:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2019.01.09-22.13.43:560][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2019.01.09-22.13.46:497][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2019.01.09-22.13.55:125][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2019.01.09-22.14.05:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Collapse01.uasset"
-[2019.01.09-22.14.08:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Collapse02.uasset"
-[2019.01.09-22.14.16:158][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2019.01.09-22.14.23:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Explosion01.uasset"
-[2019.01.09-22.14.31:313][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Explosion02.uasset"
-[2019.01.09-22.14.41:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2019.01.09-22.14.47:816][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Fire01.uasset"
-[2019.01.09-22.14.53:625][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2019.01.09-22.14.54:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2019.01.09-22.14.56:626][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2019.01.09-22.14.58:095][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Light01.uasset"
-[2019.01.09-22.15.01:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2019.01.09-22.15.03:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Light02.uasset"
-[2019.01.09-22.15.04:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2019.01.09-22.15.10:783][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Smoke01.uasset"
-[2019.01.09-22.15.19:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2019.01.09-22.15.27:134][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2019.01.09-22.15.40:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2019.01.09-22.15.52:178][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2019.01.09-22.15.52:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2019.01.09-22.15.55:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2019.01.09-22.15.59:289][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2019.01.09-22.16.00:616][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Steam01.uasset"
-[2019.01.09-22.16.00:885][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2019.01.09-22.16.01:605][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2019.01.09-22.16.02:094][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2019.01.09-22.16.02:591][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2019.01.09-22.16.02:819][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2019.01.09-22.16.03:128][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2019.01.09-22.16.03:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2019.01.09-22.16.03:860][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2019.01.09-22.16.04:864][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2019.01.09-22.16.04:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2019.01.09-22.16.05:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2019.01.09-22.16.05:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2019.01.09-22.16.06:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2019.01.09-22.16.06:524][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2019.01.09-22.16.07:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2019.01.09-22.16.08:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2019.01.09-22.16.08:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2019.01.09-22.18.12:143][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2019.01.09-22.18.12:559][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2019.01.09-22.18.14:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
-[2019.01.09-22.18.15:937][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/Minimal_Default.umap"
-[2019.01.09-22.18.20:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
-[2019.01.09-22.18.22:679][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/StarterMap.umap"
-[2019.01.09-22.18.55:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
-[2019.01.09-22.18.55:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2019.01.09-22.18.55:830][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Basic_Floor.uasset".
-[2019.01.09-22.18.56:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2019.01.09-22.18.56:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2019.01.09-22.18.57:054][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2019.01.09-22.18.57:543][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2019.01.09-22.18.57:970][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2019.01.09-22.18.58:363][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2019.01.09-22.18.58:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2019.01.09-22.18.59:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2019.01.09-22.19.00:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2019.01.09-22.19.00:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2019.01.09-22.19.02:538][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2019.01.09-22.19.03:452][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2019.01.09-22.19.05:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2019.01.09-22.19.13:050][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2019.01.09-22.19.13:644][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2019.01.09-22.19.13:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Glass.uasset"
-[2019.01.09-22.19.14:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2019.01.09-22.19.14:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2019.01.09-22.19.15:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2019.01.09-22.19.15:933][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2019.01.09-22.19.19:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2019.01.09-22.19.19:736][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2019.01.09-22.19.20:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2019.01.09-22.19.20:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2019.01.09-22.19.21:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2019.01.09-22.19.21:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2019.01.09-22.19.22:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2019.01.09-22.19.23:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2019.01.09-22.19.23:918][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2019.01.09-22.19.24:475][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2019.01.09-22.19.24:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2019.01.09-22.19.25:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2019.01.09-22.19.25:706][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2019.01.09-22.19.26:027][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2019.01.09-22.19.26:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2019.01.09-22.19.26:601][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2019.01.09-22.19.27:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2019.01.09-22.19.27:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2019.01.09-22.19.27:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2019.01.09-22.19.28:198][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2019.01.09-22.19.28:553][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2019.01.09-22.19.28:780][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2019.01.09-22.19.29:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Explosion.uasset"
-[2019.01.09-22.19.29:838][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Fire.uasset"
-[2019.01.09-22.19.30:144][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Smoke.uasset"
-[2019.01.09-22.19.30:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Sparks.uasset"
-[2019.01.09-22.19.31:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2019.01.09-22.19.31:442][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2019.01.09-22.19.31:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2019.01.09-22.19.32:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2019.01.09-22.19.32:350][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2019.01.09-22.19.32:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2019.02.21-03.22.57:332][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DOF.Algorithm:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:1]]
+[2019.02.21-03.22.57:333][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:2]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.EarlyZPassMovable:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2019.02.21-03.22.57:334][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.MonoscopicFarField:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:335][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.02.21-03.22.57:335][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.02.21-03.22.57:336][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:336][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:351][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.02.21-03.22.57:351][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.02.21-03.22.57:352][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.02.21-03.22.57:353][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:353][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.02.21-03.22.57:353][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.02.21-03.22.57:353][  0]LogInit: Selected Device Profile: [Windows]
+[2019.02.21-03.22.57:353][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.02.21-03.22.57:364][  0]LogHAL: Display: Platform has ~ 16 GB [17160523776 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.02.21-03.22.57:364][  0]LogInit: Going up to parent DeviceProfile []
+[2019.02.21-03.22.57:364][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.02.21-03.22.57:364][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.02.21-03.22.57:365][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Scalability.ini]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.02.21-03.22.57:366][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.02.21-03.22.57:367][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.02.21-03.22.57:367][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Saved/Config/Windows/Engine.ini]
+[2019.02.21-03.22.57:367][  0]LogInit: Computer: DESKTOP-MARKS
+[2019.02.21-03.22.57:367][  0]LogInit: User: Mark
+[2019.02.21-03.22.57:367][  0]LogInit: CPU Page size=4096, Cores=3
+[2019.02.21-03.22.57:367][  0]LogInit: High frequency timer resolution =3.433155 MHz
+[2019.02.21-03.22.57:368][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2019.02.21-03.22.57:368][  0]LogMemory: Platform Memory Stats for Windows
+[2019.02.21-03.22.57:368][  0]LogMemory: Process Physical Memory: 103.38 MB used, 103.38 MB peak
+[2019.02.21-03.22.57:368][  0]LogMemory: Process Virtual Memory: 94.33 MB used, 94.33 MB peak
+[2019.02.21-03.22.57:368][  0]LogMemory: Physical Memory: 7786.45 MB used,  8579.10 MB free, 16365.55 MB total
+[2019.02.21-03.22.57:368][  0]LogMemory: Virtual Memory: 4638.35 MB used,  134213088.00 MB free, 134217728.00 MB total
+[2019.02.21-03.22.57:418][  0]LogInit: Using OS detected language (en-US).
+[2019.02.21-03.22.57:418][  0]LogInit: Using OS detected locale (en-AU).
+[2019.02.21-03.22.57:419][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.02.21-03.22.58:169][  0]LogStreaming: Display: Took  0.750s to InitEngineTextLocalization.
+[2019.02.21-03.22.58:224][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.02.21-03.22.58:225][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.02.21-03.22.58:244][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.02.21-03.22.58:244][  0]LogD3D11RHI: D3D11 adapters:
+[2019.02.21-03.22.58:377][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2019.02.21-03.22.58:377][  0]LogD3D11RHI:       4018/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.02.21-03.22.58:382][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.02.21-03.22.58:382][  0]LogD3D11RHI:       0/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.02.21-03.22.58:382][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.02.21-03.22.58:394][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.02.21-03.22.58:394][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2019.02.21-03.22.58:394][  0]LogWindows: EnumDisplayDevices:
+[2019.02.21-03.22.58:394][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2019.02.21-03.22.58:395][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
+[2019.02.21-03.22.58:395][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2019.02.21-03.22.58:395][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2019.02.21-03.22.58:396][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.02.21-03.22.58:396][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2019.02.21-03.22.58:396][  0]LogD3D11RHI:   Driver Version: 418.91 (internal:25.21.14.1891, unified:418.91)
+[2019.02.21-03.22.58:396][  0]LogD3D11RHI:      Driver Date: 2-6-2019
+[2019.02.21-03.22.58:396][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
+[2019.02.21-03.22.58:483][  0]LogD3D11RHI: Async texture creation enabled
+[2019.02.21-03.22.58:498][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.02.21-03.22.59:173][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.02.21-03.22.59:203][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.02.21-03.22.59:229][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.02.21-03.22.59:240][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.02.21-03.22.59:240][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.02.21-03.22.59:336][  0]LogShaderCompilers: Guid format shader working directory is -24 characters bigger than the processId version (F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/Intermediate/Shaders/WorkingDirectory/14276/).
+[2019.02.21-03.22.59:336][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Mark/AppData/Local/Temp/UnrealShaderWorkingDir/9A6407094168A753A262C39E54488F1A/'.
+[2019.02.21-03.22.59:339][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.02.21-03.22.59:340][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.02.21-03.22.59:340][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.02.21-03.23.00:417][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: Loaded boot cache 0.10s 71MB C:/Users/Mark/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Mark/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/PCBackup/MISC/Unreal Games/Ultimate-New-Age-Fighters/Ultimate_NAF/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.02.21-03.23.00:513][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.02.21-03.23.00:539][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.02.21-03.23.00:539][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.02.21-03.23.00:539][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.02.21-03.23.00:553][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Mark/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.02.21-03.23.00:553][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.02.21-03.23.00:553][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.02.21-03.23.00:596][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.02.21-03.23.00:599][  0]LogSlate: Using FreeType 2.6.0
+[2019.02.21-03.23.00:600][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.02.21-03.23.00:778][  0]LogInit: Using OS detected language (en-US).
+[2019.02.21-03.23.00:778][  0]LogInit: Using OS detected locale (en-AU).
+[2019.02.21-03.23.00:778][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2019.02.21-03.23.00:778][  0]LogTextLocalizationManager: No localization for 'en-AU' exists, so 'en' will be used for the locale.
+[2019.02.21-03.23.00:778][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2019.02.21-03.23.00:778][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2019.02.21-03.23.01:309][  0]LogStreaming: Display: Took  0.531s to InitGameTextLocalization.
+[2019.02.21-03.23.01:323][  0]LogAssetRegistry: FAssetRegistry took 0.0080 seconds to start up
+[2019.02.21-03.23.01:721][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.018932 seconds
+[2019.02.21-03.23.01:939][  0]LogInit: Selected Device Profile: [Windows]
+[2019.02.21-03.23.02:052][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.02.21-03.23.02:057][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.02.21-03.23.02:057][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.02.21-03.23.02:057][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.02.21-03.23.02:057][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.02.21-03.23.02:207][  0]LogNetVersion: Ultimate_NAF 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2550955653)
+[2019.02.21-03.23.03:109][  0]LogMoviePlayer: Initializing movie player
+[2019.02.21-03.23.03:246][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.02.21-03.23.03:260][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.02.21-03.23.03:369][  0]SourceControl: Source control is disabled
+[2019.02.21-03.23.03:369][  0]SourceControl: Source control is disabled
+[2019.02.21-03.23.03:371][  0]SourceControl: Source control is disabled
+[2019.02.21-03.23.03:531][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.02.21-03.23.03:771][  0]LogOcInput: OculusInput pre-init called
+[2019.02.21-03.23.03:785][  0]LogUObjectArray: 43226 objects as part of root set at end of initial load.
+[2019.02.21-03.23.03:785][  0]LogUObjectAllocator: 7590224 out of 0 bytes used by permanent object pool.
+[2019.02.21-03.23.03:785][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.02.21-03.23.03:948][  0]LogEngine: Initializing Engine...
+[2019.02.21-03.23.03:951][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.02.21-03.23.03:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.02.21-03.23.03:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.02.21-03.23.03:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.02.21-03.23.03:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.02.21-03.23.04:248][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.02.21-03.23.04:325][  0]LogInit: XAudio2 using 'VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.02.21-03.23.04:342][  0]LogInit: FAudioDevice initialized.
+[2019.02.21-03.23.04:354][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.02.21-03.23.04:370][  0]LogInit: Texture streaming: Enabled
+[2019.02.21-03.23.04:582][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.02.21-03.23.04:583][  0]LogInit: Display: Game Engine Initialized.
+[2019.02.21-03.23.04:583][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.02.21-03.23.04:583][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.02.21-03.23.04:583][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.02.21-03.23.04:583][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.02.21-03.23.04:583][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.02.21-03.23.04:614][  0]LogInit: Display: Starting Game.
+[2019.02.21-03.23.04:614][  0]LogNet: Browse: /Game/Levels/Templates/Testing_Level_02_2?Name=Player
+[2019.02.21-03.23.04:615][  0]LogLoad: LoadMap: /Game/Levels/Templates/Testing_Level_02_2?Name=Player
+[2019.02.21-03.23.06:308][  0]LogAIModule: Creating AISystem for world Testing_Level_02_2
+[2019.02.21-03.23.06:309][  0]LogLoad: Game class is 'Paper_GM_C'
+[2019.02.21-03.23.06:318][  0]LogWorld: Bringing World /Game/Levels/Templates/Testing_Level_02_2.Testing_Level_02_2 up for play (max tick rate 0) at 2019.02.21-14.23.06
+[2019.02.21-03.23.06:321][  0]LogWorld: Bringing up level for play took: 0.010784
+[2019.02.21-03.23.06:321][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.02.21-03.23.06:333][  0]LogLoad: Took 1.718295 seconds to LoadMap(/Game/Levels/Templates/Testing_Level_02_2)
+[2019.02.21-03.23.06:418][  0]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
+[2019.02.21-03.23.06:419][  0]LogLoad: (Engine Initialization) Total time: 12.89 seconds
+[2019.02.21-03.23.06:419][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.02.21-03.23.06:464][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.02.21-03.23.06:471][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.02.21-03.23.06:577][  1]LogInput: Error: Duplicate mapping of key Gamepad_LeftX for axis X Axis
+[2019.02.21-03.23.06:577][  1]LogInput: Error: Duplicate mapping of key Gamepad_LeftY for axis Y Axis
+[2019.02.21-03.23.36:799][871]LogSlate: Window 'Ultimate_NAF (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.02.21-03.23.36:799][871]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.02.21-03.23.36:802][872]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.02.21-03.23.36:802][872]LogEngine: All Windows Closed
+[2019.02.21-03.23.36:802][872]LogWindows: FPlatformMisc::RequestExit(0)
+[2019.02.21-03.23.36:974][873]LogExit: Preparing to exit.
+[2019.02.21-03.23.36:974][873]LogMoviePlayer: Shutting down movie player
+[2019.02.21-03.23.37:301][873]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.02.21-03.23.37:343][873]LogExit: Game engine shut down
+[2019.02.21-03.23.37:457][873]LogExit: Object subsystem successfully closed.
+[2019.02.21-03.23.37:473][873]LogShaderCompilers: Display: Shaders left to compile 0
+[2019.02.21-03.23.37:476][873]LogD3D11RHI: Shutdown
+[2019.02.21-03.23.37:476][873]LogD3D11RHI: CleanupD3DDevice
+[2019.02.21-03.23.37:479][873]LogD3D11RHI: ~FD3D11DynamicRHI
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (382)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module SequenceRecorder (380)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module AutomationController (378)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module AutomationWorker (376)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module Voice (374)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module AIModule (372)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module GameplayDebugger (371)
+[2019.02.21-03.23.37:515][873]LogModuleManager: Shutting down and abandoning module AITestSuite (369)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module NavigationSystem (367)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (364)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (362)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module WebMMedia (360)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (358)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (356)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (354)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (352)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (350)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module CharacterAI (348)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module SessionServices (346)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (344)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (342)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MovieScene (340)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (338)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module PortalServices (336)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module PortalRpc (334)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module MessagingRpc (332)
+[2019.02.21-03.23.37:516][873]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (330)
+[2019.02.21-03.23.37:519][873]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (322)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module OculusInput (320)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (318)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module EditableMesh (316)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (314)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module CableComponent (312)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module AudioCapture (310)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2019.02.21-03.23.37:622][873]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (304)
+[2019.02.21-03.23.37:623][873]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (302)
+[2019.02.21-03.23.37:623][873]LogModuleManager: Shutting down and abandoning module MediaCompositing (300)
+[2019.02.21-03.23.37:623][873]LogModuleManager: Shutting down and abandoning module LinearTimecode (298)
+[2019.02.21-03.23.37:623][873]LogModuleManager: Shutting down and abandoning module ImgMedia (296)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module HTML5Networking (294)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (292)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (291)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module GeometryCache (288)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (287)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module BackChannel (284)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module AppleVision (282)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (280)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module AppleImageUtils (278)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module VariantManagerContent (276)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (274)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module CryptoKeys (272)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (270)
+[2019.02.21-03.23.37:626][873]LogModuleManager: Shutting down and abandoning module HotReload (269)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (268)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (264)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module UObjectPlugin (262)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (260)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (258)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module SourceControl (257)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (254)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (252)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (250)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module ActorSequence (242)
+[2019.02.21-03.23.37:627][873]LogModuleManager: Shutting down and abandoning module UdpMessaging (240)
+[2019.02.21-03.23.37:728][873]LogModuleManager: Shutting down and abandoning module TcpMessaging (238)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (236)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (234)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module FacialAnimation (232)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module DataValidation (230)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (228)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module TreeMap (227)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (224)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module AISupportModule (222)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module Paper2D (220)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (218)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (216)
+[2019.02.21-03.23.38:270][873]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2019.02.21-03.23.38:272][873]LogModuleManager: Shutting down and abandoning module Media (213)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module PacketHandler (210)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (208)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (206)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module MediaAssets (204)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module Overlay (202)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module OverlayEditor (201)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module VREditor (198)
+[2019.02.21-03.23.38:278][873]LogModuleManager: Shutting down and abandoning module StringTableEditor (196)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (194)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (192)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module FunctionalTesting (190)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (188)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (187)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module UMG (184)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module UMGEditor (183)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module Sequencer (182)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module MessageLog (179)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module SlateReflector (174)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module Slate (172)
+[2019.02.21-03.23.38:279][873]LogModuleManager: Shutting down and abandoning module EditorStyle (170)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module MRMesh (168)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module Messaging (166)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module Core (156)
+[2019.02.21-03.23.38:281][873]LogModuleManager: Shutting down and abandoning module LevelSequence (154)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module KismetCompiler (152)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module MeshUtilities (150)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (149)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (148)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (147)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (145)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (143)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (141)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module MaterialBaking (137)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (132)
+[2019.02.21-03.23.38:282][873]LogModuleManager: Shutting down and abandoning module DerivedDataCache (130)
+[2019.02.21-03.23.38:589][873]LogDerivedDataCache: Shutdown
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module XGEController (128)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TargetPlatform (126)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (125)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (123)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (121)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (119)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (117)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (115)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (113)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (111)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (109)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (107)
+[2019.02.21-03.23.38:589][873]LogModuleManager: Shutting down and abandoning module ImageWrapper (106)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (103)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (101)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (99)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (97)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (95)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (93)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (91)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (89)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module InputCore (86)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module Settings (84)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module SteamVR (80)
+[2019.02.21-03.23.38:590][873]LogHMD: Freeing OpenVRDLLHandle.
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
+[2019.02.21-03.23.38:590][873]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
+[2019.02.21-03.23.38:591][873]LogModuleManager: Shutting down and abandoning module XMPP (63)
+[2019.02.21-03.23.38:591][873]LogModuleManager: Shutting down and abandoning module WebSockets (62)
+[2019.02.21-03.23.38:609][873]LogModuleManager: Shutting down and abandoning module HTTP (59)
+[2019.02.21-03.23.38:626][873]LogModuleManager: Shutting down and abandoning module SSL (58)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
+[2019.02.21-03.23.38:627][873]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
+[2019.02.21-03.23.38:628][873]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2019.02.21-03.23.38:628][873]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
+[2019.02.21-03.23.38:628][873]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2019.02.21-03.23.38:680][873]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2019.02.21-03.23.38:681][873]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2019.02.21-03.23.38:686][873]LogExit: Exiting.
+[2019.02.21-03.23.38:694][873]Log file closed, 02/21/19 14:23:38
